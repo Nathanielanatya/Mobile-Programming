@@ -26,13 +26,13 @@
                         "Nama Poli : ${widget.poli.namaPoli}"                             
                         style: TextStyle(fontSize: 20),
                      ),
-                     // Mendefinisikan class _PoliDetailState yang meng-extends class State dan menyediakan method build. Method build mengembalikan widget Scaffold, yang berfungsi sebagai root dari halaman detail. Widget Scaffold memiliki properti appBar yang menampilkan AppBar dengan judul "Detail Poli". Properti body dari Scaffold berisi Column widget dengan Text widget yang menampilkan nama dari objek Poli yang diterima melalui konstruktor widget.
+                     // Mendefinisikan class _PoliDetailState yang meng-extends class State dan menyediakan method build. 
                     SizedBox(height: 20),
-                    //widget SizedBox yang memberikan jarak vertikal sebesar 20 piksel di antara elemen sebelumnya dan elemen berikutnya.
+                    // SizedBox yang memberikan jarak vertikal sebesar 20 piksel di antara elemen sebelumnya dan elemen berikutnya.
                     Row(
-                    //Row yang digunakan untuk menampilkan elemen-elemen secara horizontal.    
+                    //Row digunakan menampilkan elemen-elemen secara horizontal.    
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        //mainAxisAlignment digunakan untuk mengatur penyebaran elemen-elemen secara merata di sepanjang sumbu utama (horizontal).
+                        //mainAxisAlignment digunakan mengatur penyebaran elemen-elemen secara merata di sepanjang sumbu utama (horizontal).
                         children: [
                         //children dari widget Row yang berisi daftar elemen-elemen yang akan ditampilkan secara horizontal.    
                             ElevatedButton(
@@ -41,17 +41,17 @@
                                 //onPressed digunakan untuk menentukan tindakan yang akan dijalankan ketika tombol ditekan.
                                 style:
                                     ElevatedButton.styleFrom(backgroundColor: Colors.green),
-                                //style digunakan untuk mengatur tampilan tombol. Di sini, menggunakan ElevatedButton.styleFrom dengan properti backgroundColor yang diatur menjadi Colors.green, sehingga tombol akan memiliki latar belakang hijau    
+                                //style digunakan mengatur tampilan tombol. Di sini, menggunakan ElevatedButton.styleFrom dengan properti backgroundColor yang diatur menjadi Colors.green, sehingga tombol akan memiliki latar belakang hijau    
                                 child: const Text("Ubah")),
-                                //child digunakan untuk menentukan elemen anak dari tombol, dalam hal ini sebuah Text yang menampilkan teks "Ubah"
+                                //child digunakan menentukan elemen anak dari tombol, dalam hal ini sebuah Text yang menampilkan teks "Ubah"
                             ElevatedButton(
-                            //widget ElevatedButton kedua, yang merupakan tombol dengan tampilan yang sedikit menonjol.    
+                            // ElevatedButton kedua, yang merupakan tombol dengan tampilan yang sedikit menonjol.    
                                 onPressed: () {},
-                                //onPressed digunakan untuk menentukan tindakan yang akan dijalankan ketika tombol ditekan
+                                //onPressed digunakan menentukan tindakan yang akan dijalankan ketika tombol ditekan
                                 style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                                //Properti style digunakan untuk mengatur tampilan tombol. Di sini, menggunakan ElevatedButton.styleFrom dengan properti backgroundColor yang diatur menjadi Colors.red, sehingga tombol akan memiliki latar belakang merah.
+                                //Properti style digunakan  mengatur tampilan tombol. Di sini, menggunakan ElevatedButton.styleFrom dengan properti backgroundColor yang diatur menjadi Colors.red, sehingga tombol akan memiliki latar belakang merah.
                                 child: const Text("Hapus")),
-                                //Properti child digunakan untuk menentukan elemen anak dari tombol, dalam hal ini sebuah Text yang menampilkan teks "Hapus".
+                                // child digunakan menentukan elemen anak dari tombol, dalam hal ini sebuah Text yang menampilkan teks "Hapus".
                         ],
                         //Ini menutup daftar elemen anak dari Row.
                     )
